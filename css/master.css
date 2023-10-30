@@ -1,0 +1,200 @@
+/* INSERT FONT CODE RIGHT HERE  */
+
+:root {
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: rgb(26, 26, 26);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+header .logo {
+    display: flex;
+    font-size: 26px;
+    font-weight: bold;
+    height: 72px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+header .main-ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 50px;
+    font-weight: 700;
+}
+
+header .main-ul li a {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    transition: 0.3s;
+}
+
+header .main-ul li:hover a {
+    color: white;
+}
+
+/* Start Landing Codes */
+.landing {
+    position: relative;
+}
+
+.landing .container {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+    text-align: center;
+    background-color: black;
+}
+
+.landing .text {
+    flex: 1;
+}
+
+.landing .text h1 {
+    font-size: 40px;
+    margin: 0;
+    letter-spacing: -2px;
+    color: white;
+}
+
+.landing .text p {
+    font-size: 23px;
+    line-height: 1.7;
+    margin: 5px 0 0;
+    letter-spacing: -0.4px;
+    color: grey;
+    transition: 1s;
+}
+
+.landing .text p:hover {
+    letter-spacing: 2px;
+}
+
+/* Start Store Coding  */
+.store {
+    padding-top: var(--main-padding-top);
+    padding-bottom: var(--main-padding-bottom);
+    position: relative;
+    background-color: rgb(15, 15, 15);
+}
+
+.store .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 40px;
+}
+
+.store .title {
+    margin-top: -20px;
+    margin-bottom: 60px;
+}
+
+.store .store-title {
+    color: white;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 3px;
+    font-weight: 900;
+}
+
+.store .store-p {
+    color: grey;
+    font-weight: 700;
+    text-align: center;
+    margin-top: -20px;
+}
+
+.store .container .box {
+    box-shadow: 0 2px 15px rgb(0 0 0 / 15%);
+    border-radius: 6px;
+    overflow: hidden;
+    background-color: white;
+}
+
+.store .box {
+    transition: 0.3s;
+}
+
+.store .box:hover {
+    box-shadow: 0 2px 20px rgba(0, 81, 255, 0.514);
+}
+
+.store .box img {
+    width: 100%;
+    max-width: 100%;
+}
+
+.store .box .content {
+    padding: 20px;
+    margin: 0;
+}
+
+.store .box .content h1 {
+    font-weight: 700;
+    text-align: center;
+}
+
+.store .box .content .read-btn {
+    border: 1px solid black;
+    border-radius: 4px;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    display: flex;
+    width: 100px;
+    height: 25px;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    box-shadow: 0 2px 10px rgb(22 22 22 / 39%);
+    transition: 0.3s;
+}
+
+.store .box .content .read-btn:hover {
+    box-shadow: 0 2px 10px rgba(22, 22, 22, 0.61);
+}
+

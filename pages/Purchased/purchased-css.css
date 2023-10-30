@@ -1,0 +1,125 @@
+/* INSERT FONT CODE RIGHT HERE  */
+
+:root {
+    --main-padding-top: 100px;
+    --main-padding-bottom: 100px;
+}
+
+
+* {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+body {
+    font-family: 'Cairo', sans-serif;
+    font-family: 'Lato', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Rubik', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+}
+
+header {
+    position: relative;
+    background-color: rgb(26, 26, 26);
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    position: relative;
+}
+
+header .logo {
+    display: flex;
+    font-size: 26px;
+    font-weight: bold;
+    height: 72px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: white;
+    padding-left: 50px;
+    text-transform: uppercase;
+}
+
+header .main-ul {
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    padding-right: 50px;
+    font-weight: 700;
+}
+
+header .main-ul li a {
+    text-decoration: none;
+    color: rgb(187, 187, 187);
+    transition: 0.3s;
+}
+
+header .main-ul li:hover a {
+    color: white;
+}
+
+/* Start Landing Codes */
+.landing {
+    position: relative;
+}
+
+.landing .container {
+    min-height: calc(100vh - 72px);
+    display: flex;
+    align-items: center;
+    padding-bottom: 120px;
+    text-align: center;
+    background-color: black;
+}
+
+.landing .container .title h1 {
+    color: white;
+    font-weight: 900;
+    text-align: center;
+    font-size: 50px;
+    display: flex;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin-top: -30px;
+    cursor: default;
+}
+
+.landing .submit-btn {
+    width: 370px;
+    height: 30px;
+    border-radius: 6px;
+    border: 1px solid white;
+    background-color: black;
+    color: white;
+    transition: 0.6s;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    margin-top: 100px;
+    cursor: pointer;
+}
+
+.landing .submit-btn:hover {
+    border: 1px solid blue;
+}
+
+
